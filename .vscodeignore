@@ -1,0 +1,14 @@
+# ignore everything
+*
+*/**
+**/.DS_Store
+
+# UnIgnore
+!src/*
+!public/*
+!.env
+!.gitignore
+!.nvmrc
+!.jsconfig.json
+!package.json
+!README.md

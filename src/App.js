@@ -1,7 +1,8 @@
 import React from 'react';
+import AppRoutes from 'routes';
 
 function App() {
-  return <h1>Materia app</h1>;
+  return <AppRoutes />;
 }
 
 export default App;

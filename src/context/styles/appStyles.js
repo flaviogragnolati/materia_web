@@ -3,10 +3,10 @@ const { colors } = defaults;
 
 const appStyles = {
   light: {
-    main: colors.main.light,
+    main: colors.main?.light,
   },
   dark: {
-    main: colors.main.dark,
+    main: colors.main?.dark,
   },
 };
 

@@ -6,7 +6,7 @@ import {
   MuiThemeProvider,
   StylesProvider,
 } from '@material-ui/core';
-import GlobalStyles from './GlobalStyles';
+import GlobalStyles from './globalStyles';
 import applyTheme from './applyTheme';
 import { ThemeContext } from './themeContext';
 import { useThemeMode } from './useThemeMode';

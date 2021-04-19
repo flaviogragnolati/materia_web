@@ -1,7 +1,16 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 
-import { red } from '@material-ui/core/colors';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+  Card,
+  CardHeader,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Avatar,
+  IconButton,
+  Typography,
+} from '@material-ui/core';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -16,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeReviewCard() {
+function ProductCard() {
   const classes = useStyles();
 
   return (
@@ -58,3 +67,5 @@ export default function RecipeReviewCard() {
     </Card>
   );
 }
+
+export default ProductCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Faq from 'views/Faq/components/Faq';
+import Faq from 'views/FaqView/components/Faq';
 
 function FaqView() {
   return <Faq />;

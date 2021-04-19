@@ -1,18 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+const BASE_ENDPOINT = 'https://localhost/3000';
 
-const initialStateAuth = {
-  test: false,
-};
+const PRODUCTS_ENDPOINT = BASE_ENDPOINT + '/products';
 
-const authSlice = createSlice({
-  name: 'auth',
-  initialState: initialStateAuth,
-  reducers: {
-    testReducer: (state, { payload }) => (state.test = !state.test),
-  },
-  extraReducers: {},
-});
-
-export const { testReducer } = authSlice.actions;
-
-export default authSlice;
+const USERS_ENDPOINT = BASE_ENDPOINT + '/users';

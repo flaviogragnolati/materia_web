@@ -2,8 +2,10 @@ import { Route, Switch } from 'react-router-dom';
 // Auth components
 import PublicRoute from 'context/auth/PublicRoute';
 
-// Views || Components to render in routes
+// Views | Components to render in routes
 import HomeView from 'views/HomeView';
+import CatalogueView from 'views/CatalogueView';
+import FaqView from 'views/FaqView';
 import NotFound from 'components/NotFound';
 
 export const routes = [
@@ -12,6 +14,16 @@ export const routes = [
     component: HomeView,
     access: 'public',
     exact: true,
+  },
+  {
+    path: ['/catalogue'],
+    component: CatalogueView,
+    access: 'public',
+  },
+  {
+    path: ['/faq'],
+    component: FaqView,
+    access: 'public',
   },
   {
     path: ['/404', 'notFound', 'not-Found'],

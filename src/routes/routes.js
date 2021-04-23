@@ -7,6 +7,8 @@ import HomeView from 'views/HomeView';
 import CatalogueView from 'views/CatalogueView';
 import FaqView from 'views/FaqView';
 import NotFound from 'components/NotFound';
+import RegisterView from 'views/RegisterView';
+import LoginView from 'views/LoginView';
 
 export const routes = [
   {
@@ -23,6 +25,16 @@ export const routes = [
   {
     path: ['/faq'],
     component: FaqView,
+    access: 'public',
+  },
+  {
+    path: ['/login'],
+    component: LoginView,
+    access: 'public',
+  },
+  {
+    path: ['/register'],
+    component: RegisterView,
     access: 'public',
   },
   {
